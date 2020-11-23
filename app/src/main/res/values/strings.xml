@@ -15,7 +15,7 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_tabbed">TabbedActivity</string>
 
-    <string name="api_key">63c0e404d0c348039be3299765a8d004</string>
+    <string name="api_key">73da74be42494c5f8672b733a9cc3cd1</string>
     <string name="base_url">https://newsapi.org/v2/</string>
 
     <string name="weather_api_key">c6194d2af2f5ce11ad34ebb9a3bc0e5e</string>

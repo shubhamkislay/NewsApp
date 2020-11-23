@@ -29,7 +29,7 @@ public class NewsListDataRepository {
     private String category;
     private static int TOO_MANY_CALLS = 429;
     private NewsLiveData newsListLiveData;
-    private static  String API_KEY = "1176cac9454e4fc98115a92a9401d923";
+    private static  String API_KEY = "73da74be42494c5f8672b733a9cc3cd1";
     private static  String BASE_URL = "https://newsapi.org/v2/";
     private static final String LOG_TAG = "LIVE DATA";
     private static final String COUNTRY = "in";
