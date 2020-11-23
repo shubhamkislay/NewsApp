@@ -1,6 +1,7 @@
 # NewsApp
 
 Apis used
+
 News Api: http://newsapi.org/v2/
 
 Weather Api: http://api.openweathermap.org/
