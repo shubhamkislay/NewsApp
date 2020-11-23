@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SearchNewsActivity">
+
+    <EditText
+        android:id="@+id/search_news"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Search News"
+        android:maxLines="1"
+        android:maxLength="40"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:imeActionLabel="search"
+        android:textColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_news_recyclerView"
+        app:layout_constraintTop_toBottomOf="@id/search_news"
+        android:background="@color/inactive_color"
+        android:layout_width="match_parent"
+        tools:listitem="@layout/news_search_item_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

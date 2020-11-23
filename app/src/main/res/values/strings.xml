@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">NewsApp</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_tabbed">TabbedActivity</string>
+
+    <string name="api_key">63c0e404d0c348039be3299765a8d004</string>
+    <string name="base_url">https://newsapi.org/v2/</string>
+
+    <string name="weather_api_key">c6194d2af2f5ce11ad34ebb9a3bc0e5e</string>
+    <string name="weather_base_url">https://api.openweathermap.org/data/2.5/</string>
+
+
+    <string name="business_category">business</string>
+    <string name="sports_category">sports</string>
+    <string name="entertainment_category">entertainment</string>
+    <string name="technology_category">technology</string>
+    <string name="science_category">science</string>
+    <string name="health_catgory">health</string>
+    <string name="general_category">general</string>
+
+    <string name="newsImageTransition">newsImage</string>
+    <string name="newsTitleTransition">newsTitleTransition</string>
+    <string name="tooManyMsg">Too many calls were made using this the current api.
+This is a free api, and can make only 100 requests in a day</string>
+
+
+</resources>

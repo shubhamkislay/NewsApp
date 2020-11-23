@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ViewNewsActivity">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/topPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_alignParentLeft="true"
+            android:id="@+id/back_nav"
+            android:backgroundTint="@android:color/black"
+            android:background="@drawable/ic_baseline_navigate_before_24"
+            android:layout_margin="8dp"
+            android:layout_width="36dp"
+            android:layout_height="36dp"/>
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/bookmark_btn"
+            android:background="@drawable/ic_baseline_bookmark_border_24"
+            android:backgroundTint="@android:color/black"
+            android:layout_margin="8dp"
+            android:layout_width="32dp"
+            android:layout_height="32dp"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+
+        app:layout_constraintTop_toBottomOf="@id/topPanel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/news_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:transitionName="@string/newsImageTransition"
+        android:adjustViewBounds="true"
+        android:foregroundGravity="top"
+        android:scaleType="centerCrop"
+        app:layout_constraintHeight_min="250dp"
+        android:src="@color/inactive_color"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <TextView
+        android:id="@+id/news_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/news_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:transitionName="@string/newsTitleTransition"
+        android:layout_width="0dp"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:fontFamily="sans-serif"
+        android:padding="16dp"
+        android:text="This is the News Title"
+        android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/news_desc"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/news_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="0dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:fontFamily="sans-serif"
+            android:padding="16dp"
+            tools:text="News Description"
+            android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+        android:id="@+id/bottom_panel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        
+        <TextView
+            android:id="@+id/news_source"
+            tools:text="By ABC news"
+            android:textStyle="bold"
+            android:background="@color/inactive_color"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
